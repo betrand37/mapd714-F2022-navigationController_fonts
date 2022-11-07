@@ -109,8 +109,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="a8S-QE-T0f" kind="show" id="arI-Em-0bp"/>
-                                    <segue destination="k8h-kV-UB6" kind="show" trigger="accessoryAction" id="YSn-R0-oyv"/>
+                                    <segue destination="a8S-QE-T0f" kind="show" id="WS2-RM-IRL"/>
+                                    <segue destination="k8h-kV-UB6" kind="show" trigger="accessoryAction" id="clq-e1-lhQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -187,14 +187,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Include in Favourites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJM-LH-4ET">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Include in Favourites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJM-LH-4ET">
                                 <rect key="frame" x="157" y="715" width="157" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="V8x-js-aPl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whF-hX-jnF">
-                                <rect key="frame" x="327" y="721" width="51" height="31"/>
+                                <rect key="frame" x="327" y="720" width="51" height="32"/>
                                 <connections>
                                     <action selector="toggleFavoriteWithSender:" destination="k8h-kV-UB6" eventType="valueChanged" id="w9D-yo-nTr"/>
                                 </connections>
@@ -224,18 +227,18 @@
                             <constraint firstItem="IyP-4S-ObP" firstAttribute="top" secondItem="sR1-oL-bzf" secondAttribute="top" constant="73" id="26s-vn-KnK"/>
                             <constraint firstItem="IyP-4S-ObP" firstAttribute="trailing" secondItem="ige-zc-vZD" secondAttribute="trailing" id="2WH-5D-SgY"/>
                             <constraint firstItem="sR1-oL-bzf" firstAttribute="bottom" secondItem="ige-zc-vZD" secondAttribute="bottom" constant="12" id="3Vg-ac-4aK"/>
-                            <constraint firstItem="ZJM-LH-4ET" firstAttribute="trailing" secondItem="VyP-bm-JiC" secondAttribute="trailing" id="4iy-vW-XJQ"/>
                             <constraint firstItem="sR1-oL-bzf" firstAttribute="bottom" secondItem="VyP-bm-JiC" secondAttribute="bottom" constant="13" id="78U-0i-YEZ"/>
+                            <constraint firstItem="ZJM-LH-4ET" firstAttribute="leading" secondItem="sR1-oL-bzf" secondAttribute="leading" constant="157" id="8ww-43-5XW"/>
                             <constraint firstItem="ige-zc-vZD" firstAttribute="leading" secondItem="VyP-bm-JiC" secondAttribute="trailing" constant="33" id="BeP-V5-n3D"/>
-                            <constraint firstItem="VyP-bm-JiC" firstAttribute="top" secondItem="ZJM-LH-4ET" secondAttribute="bottom" constant="11" id="CeA-MO-QbW"/>
+                            <constraint firstItem="whF-hX-jnF" firstAttribute="leading" secondItem="ZJM-LH-4ET" secondAttribute="trailing" constant="13" id="Btd-f9-Pkv"/>
+                            <constraint firstItem="ZJM-LH-4ET" firstAttribute="trailing" secondItem="VyP-bm-JiC" secondAttribute="trailing" id="Fut-Mc-Wjh"/>
                             <constraint firstItem="IyP-4S-ObP" firstAttribute="leading" secondItem="VyP-bm-JiC" secondAttribute="leading" id="FyF-Of-0EK"/>
                             <constraint firstItem="IyP-4S-ObP" firstAttribute="leading" secondItem="Ilp-vl-k0k" secondAttribute="leadingMargin" id="M2i-z2-fWN"/>
                             <constraint firstItem="sR1-oL-bzf" firstAttribute="trailing" secondItem="whF-hX-jnF" secondAttribute="trailing" constant="14" id="UB7-4U-mfX"/>
                             <constraint firstItem="IyP-4S-ObP" firstAttribute="trailing" secondItem="Ilp-vl-k0k" secondAttribute="trailingMargin" id="Ysr-Qu-8Ow"/>
-                            <constraint firstItem="whF-hX-jnF" firstAttribute="leading" secondItem="ZJM-LH-4ET" secondAttribute="trailing" constant="13" id="iZD-OZ-u5Y"/>
+                            <constraint firstItem="VyP-bm-JiC" firstAttribute="top" secondItem="ZJM-LH-4ET" secondAttribute="bottom" constant="11" id="a0v-mi-2cr"/>
                             <constraint firstItem="ige-zc-vZD" firstAttribute="top" secondItem="whF-hX-jnF" secondAttribute="bottom" constant="8" id="n3F-qo-xDS"/>
-                            <constraint firstItem="ZJM-LH-4ET" firstAttribute="leading" secondItem="sR1-oL-bzf" secondAttribute="leading" constant="157" id="qaU-om-YiY"/>
-                            <constraint firstItem="ZJM-LH-4ET" firstAttribute="centerY" secondItem="whF-hX-jnF" secondAttribute="centerY" id="zgY-pB-dH2"/>
+                            <constraint firstItem="ZJM-LH-4ET" firstAttribute="centerY" secondItem="whF-hX-jnF" secondAttribute="centerY" id="nvB-dh-bZi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UH1-wN-CTe"/>

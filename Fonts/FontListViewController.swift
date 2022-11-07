@@ -9,7 +9,7 @@ import UIKit
 
 class FontListViewController: UITableViewController
 {
-    private var familyNames: [String]!
+
     var fontNames: [String] = []
     var showsFavorites: Bool = false
     private var cellPointSize: CGFloat!
@@ -19,7 +19,7 @@ class FontListViewController: UITableViewController
     {
         super.viewDidLoad()
 
-        familyNames = (UIFont.familyNames as [String]).sorted()
+//        familyNames = (UIFont.familyNames as [String]).sorted()
         let preferredTableViewFont = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
         cellPointSize = preferredTableViewFont.pointSize
         tableView.estimatedRowHeight = cellPointSize
@@ -99,7 +99,7 @@ class FontListViewController: UITableViewController
         let indexPath = tableView.indexPath(for: tableViewCell)!
         let font = fontForDisplay(atIndexPath: indexPath as NSIndexPath)
             
-        if segue.identifier == "ShowFontSizes"
+        if (segue.identifier == "ShowFontSizes")
         {
             let sizesVC =  segue.destination as! FontSizesViewController
             sizesVC.title = font.fontName
